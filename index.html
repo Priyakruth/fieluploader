@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag & Drop or Browse - File Upload</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+  <div class="container">
+    <h1>Multifile Uploader</h1>
+    <div class="upload-container" id="uploadContainer">
+      <h2>Drag & Drop to Upload</h2>
+      <div class="file-input">
+        <input type="file" id="fileInput" multiple>
+        <p class="p_or">Or</p>
+        <label for="fileInput" class="browse-btn">Browse Files</label>
+      </div>
+    </div>
+
+    <div id="fileList" class="file-list"></div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
