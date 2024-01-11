@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     uploadContainer.addEventListener('drop', function (event) {
       event.preventDefault();
       uploadContainer.classList.remove('drag-over');
-      console.log('TEST', event.dataTransfer.files);
       handleFiles(event.dataTransfer.files);
     });
   
@@ -27,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
       fileList.innerHTML = ''; 
   
       for (const file of files) {
-        console.log(file);
         const listItem = document.createElement('div');
         listItem.textContent = file.name;
         fileList.appendChild(listItem);
